@@ -1,0 +1,274 @@
+/* Global Styles */
+:root {
+    --brand-color: #b3ac98;
+    --accent-color: #403d39;
+    --highlight-color: #e07a5f;
+    --light-bg: #f9f9f9;
+    --dark-text: #1a1a1a;
+    --light-text: #ffffff;
+    --border-radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--brand-color);
+    color: var(--dark-text);
+    line-height: 1.6;
+    padding: 20px;
+}
+.site-header{
+    border-style: solid;
+}
+
+
+/* Product Info */
+
+
+h1 {
+    font-size: 26px;
+    color: var(--accent-color);
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--highlight-color);
+}
+
+
+
+
+
+/* Text blocks */
+.description,
+.note {
+    font-size: 15px;
+    background-color: var(--light-bg);
+    padding: 12px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.site-header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    text-align: left;
+}
+
+.site-header h2 {
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+
+/*image size*/
+
+.image{
+    border-width: 3px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    background-color: hsla(0, 0%, 0%, 0.4);
+    padding: 10px;
+    
+}
+#imagechodrive{
+    width: 500px;
+  
+}
+#Enternal{
+    width: 700px;
+    height: 400px;
+    
+
+}
+#sludgecity{
+    height: 400px;
+    width: 600px;
+   
+}
+
+/* Smooth Transition for Images */
+.image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Slide Up Title Effect */
+.tab-card h3 {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+/* Fade-In Animation for Tab Cards */
+.tab-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tab-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* text align */
+
+.text-align{
+    text-align: center;
+}
+.text-alignheader{
+    text-align: left;
+    margin-left: 45px;
+    padding: 5px;
+}
+
+
+/* === Grid Section for Additional Tabs === */
+
+
+.tabs-grid-section {
+    max-width: 1440px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+    text-align: left;
+}
+
+.tabs-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Always a single column */
+    gap: 30px;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 240px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .product-image,
+    .product-info {
+        width: 100%;
+    }
+
+    /* no longer using this sample pack image on the page. 
+    .sample-pack-label {
+        font-size: 20px;
+        bottom: 10px;
+        left: 10px;
+        padding: 8px 16px;
+    }*/
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .add-to-cart,
+    .shop-pay {
+        width: 100%;
+    }
+
+    .tabs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+        gap: 20px;
+    }
+
+    /*no longer using this sample pack image on the page.*/
+    .sample-pack-label {
+        font-size: 18px;
+    }
+
+    .quantity-controls {
+        justify-content: space-between;
+    }
+
+    .description,
+    .note {
+        font-size: 14px;
+    }
+
+    .tabs-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+.tab-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.tab-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.tab-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.tab-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.tab-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.tab-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.tab-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

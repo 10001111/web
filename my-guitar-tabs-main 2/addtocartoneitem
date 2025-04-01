@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sylvester's Guitar Tab Store</title>
+
+    <meta name="description"
+        content="Get the exclusive Sylvester guitar sample pack by Brian Camacho. Includes WAVs, chords, TONE & DRY stems for ultimate flexibility." />
+    <meta name="keywords"
+        content="guitar samples, Sylvester, guitar tabs, Brian Camacho, WAV pack, sample pack, guitar riffs" />
+    <meta name="author" content="Brian Camacho" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            margin-bottom: 20px;
+        }
+
+        .cart {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+            width: 300px;
+        }
+
+        .cart h3 {
+            margin-bottom: 10px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .clear-cart {
+            background-color: #0070ba;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <a href=""><h2 class="text-alignheader">Brian Camacho</h2></a>
+    </header>
+
+    <div class="container">
+        <div class="product-image">
+            <img src="Enternal" alt="Enternal Cover Picture " />
+        </div>
+
+        <div class="product-info">
+            <h1>Enternal</h1>
+            <p class="price">$5.00 USD</p>
+            <button class="add-to-cart">Add to Cart</button>
+            <a class="paypal-button" href="https://paypal.me/Sylvester39376/8" target="_blank"
+                rel="noopener noreferrer">
+                Pay with PayPal
+            </a>
+        </div>
+    </div>
+
+    <!-- Cart Display -->
+    <div class="cart">
+        <h3>Shopping Cart</h3>
+        <div id="cart-items"></div>
+        <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <script>
+        let cart = [];
+
+        // Add to Cart function
+        function addToCart(item) {
+            const existingItem = cart.find(cartItem => cartItem.name === item.name);
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ ...item, quantity: 1 });
+            }
+            updateCartDisplay();
+        }
+
+        // Update Cart Display
+        function updateCartDisplay() {
+            const cartItemsContainer = document.getElementById("cart-items");
+            cartItemsContainer.innerHTML = "";
+            cart.forEach(item => {
+                const cartItem = document.createElement("div");
+                cartItem.classList.add("cart-item");
+                cartItem.textContent = `${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}`;
+                cartItemsContainer.appendChild(cartItem);
+            });
+        }
+
+        // Clear Cart
+        function clearCart() {
+            cart = [];
+            updateCartDisplay();
+        }
+
+        // Event Listener for Add to Cart Button
+        document.querySelector(".add-to-cart").addEventListener("click", () => {
+            addTo

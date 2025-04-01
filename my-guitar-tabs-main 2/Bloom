@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>Sylvester's Guitar Tab Store</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Get the exclusive Sylvester guitar sample pack by Brian Camacho. Includes WAVs, chords, TONE & DRY stems for ultimate flexibility." />
+    <meta name="keywords"
+        content="guitar samples, Sylvester, guitar tabs, Brian Camacho, WAV pack, sample pack, guitar riffs" />
+    <meta name="author" content="Brian Camacho" />
+
+    <!-- Social Meta (Open Graph for link previews) -->
+    <meta property="og:title" content="Sylvester's Guitar Tab Store" />
+    <meta property="og:description"
+        content="High-quality WAV guitar samples by Brian Camacho — ready to remix or record with." />
+    <meta property="og:image" content="images/homepage-img1.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourcustomdomain.com" />
+
+    <!-- Favicon (Optional) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        
+        <a href="http://127.0.0.1:3000/Main"><h2 class="text-alignheader">Brian Camacho</h2></a>
+       
+    </header>
+
+
+    <div class="container">
+        <div class="product-image">
+            <img src="images/homepage-img1.jpg" alt="Sylvester Sample Pack Cover" />
+            <!--<div class="sample-pack-label">SAMPLE<br>PACK</div>-->
+        </div>
+
+        <div class="product-info">
+            <h1>[Bloom] virtual Tab Sheet</h1>
+            <p class="price">$5.00 USD</p>
+
+          <!-- <div class="quantity-controls">
+               <button>-</button>
+                 <span>1</span>
+                <button>+</button>
+            </div>-->
+
+            <button class="add-to-cart">Add to cart</button>
+            <!--<button class="shop-pay">Buy with Shop Pay</button>-->
+
+            <a class="paypal-button" href="https://paypal.me/Sylvester39376/5" target="_blank"
+                rel="noopener noreferrer">
+                Pay with PayPal
+            </a>
+
+
+
+        <!--<a class="more-options" href="#">More payment options</a>-->
+
+            <p class="description">
+               
+            </p>
+
+            <p class="note">
+                All files will be delivered to your email shortly after purchase. If you don’t see them, double-check
+                your spam folder. Still nothing? Send me a DM on Instagram as well as your paypal usr <strong class="Instagram">@sylvester8183737373</strong> and I’ll send it
+                manually .
+            </p>
+
+            <!--<div class="share-link">
+                🔗 <a href="#">Share this product</a>
+            </div>-->
+        </div>
+    </div>
+
+    <!-- Additional Tab Offerings Section -->
+    <section class="tabs-grid-section">
+        <h2 class="section-title">More Guitar Tabs</h2>
+        <div class="tabs-grid">
+            <div class="tab-card">
+                <a  href="http://127.0.0.1:3000/Asimpleriffiputtogther"><img src="images/homepage-img1.jpg" alt="Guitar Tab 1"></a>
+                <h3>A simple riff i put togther</h3>
+                <p>$5.00 USD</p>
+            </div>
+            <div class="tab-card">
+                <a href="http://127.0.0.1:3000/Enternal"><img src="images/homepage-img2.jpg" alt="Guitar Tab 2"></a>
+                <h3>Enternal</h3>
+                <p>$5.00 USD</p>
+            </div>
+            <div class="tab-card">
+                <a href=""><img src="images/homepage-img3.jpg" alt="Guitar Tab 3"></a>
+                <h3>Pulse Shift</h3>
+                <p>$5.00 USD</p>
+            </div>
+            <div class="tab-card">
+               <a href=""><img src="images/homepage-img4.jpg" alt="Guitar Tab 4"></a>
+                <h3>Lo-Fi Cloud</h3>
+                <p>$5.00 USD</p>
+            </div>
+            <div class="tab-card">
+                <a href=""><img src="images/homepage-img5.jpg" alt="Guitar Tab 5"></a>
+                <h3>Sludge City</h3>
+                <p>$5.00 USD</p>
+            </div>
+            <div class="tab-card">
+                <a href=""><img src="images/homepage-img6.jpg" alt="Guitar Tab 6"></a>
+                <h3>Jazz Drift</h3>
+                <p>$5.00 USD</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

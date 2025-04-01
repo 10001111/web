@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>Sylvester's Guitar Tab Store</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Get the exclusive Sylvester guitar sample pack by Brian Camacho. Includes WAVs, chords, TONE & DRY stems for ultimate flexibility." />
+    <meta name="keywords"
+        content="guitar samples, Sylvester, guitar tabs, Brian Camacho, WAV pack, sample pack, guitar riffs" />
+    <meta name="author" content="Brian Camacho" />
+
+    <!-- Social Meta (Open Graph for link previews) -->
+    <meta property="og:title" content="Sylvester's Guitar Tab Store" />
+    <meta property="og:description"
+        content="High-quality WAV guitar samples by Brian Camacho — ready to remix or record with." />
+    <meta property="og:image" content="images/homepage-img1.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourcustomdomain.com" />
+
+    <!-- Favicon (Optional) -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        
+        <h2 class="text-alignheader">Brian Camacho</h2>
+       
+    </header>
+    
+  
+
+    <!-- Additional Tab Offerings Section -->
+    <section class="tabs-grid-section">
+        <div class="tabs-grid">
+            <div class="tab-card">
+               <!-- <a href="">
+                    <img  class="image" id="image"src="images/homepage-img1.jpg" alt="Guitar Tab 1"></a>
+                    <h3 class="text-align">idk</h3>
+                    <p class="text-align">$5.00 USD</p>
+                
+            </div>
+            <div class="tab-card">
+                <a href="http://127.0.0.1:3000/Bloom">
+                    <img class="image" id="image" src="images/homepage-img1.jpg" alt="[Bloom] Virtual Tab Sheet"></a>
+                    <h3 class="text-align">[Bloom] Virtual Tab Sheet</h3>
+                    <p class="text-align">$5.00 USD</p>
+            
+            </div>
+            <div class="tab-card">
+                <a href="http://127.0.0.1:3000/Asimpleriffiputtogther">
+                    <img class="image" id="imagechodrive" src="images/homepage-img2.jpg" alt="Echo Drive"></a>
+                    <h3 class="text-align">Asimpleriffiputtogther</h3>
+                    <p class="text-align">$5.00 USD</p>-->
+                
+            </div>
+            <div class="tab-card">
+                <a href="http://127.0.0.1:3000/Enternal">
+                    <img class="image" id="Enternal" src="Enternal.jpg" alt="Enternal Cover Picture "></a>
+                    <h3 class="text-align">Enternal</h3>
+                    <p class="text-align">$5.00 USD</p>
+               
+            </div>
+            
+            <!--<div class="tab-card">
+                <a href="#">
+                    <img class="image" id="sludgecity"src="images/homepage-img5.jpg" alt="Sludge City"></a>
+                    <h3 class="text-align">Sludge City</h3>
+                    <p class="text-align">$5.00 USD</p>
+                
+            </div>-->
+            
+        </div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+
+
+
