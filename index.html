@@ -30,12 +30,16 @@
     <link rel="stylesheet" href="style1.css" />
 </head>
 
+
 <body>
-    <header class="site-header">
+    <div id="header-placeholder"></div>
+
+
+    <!-- <header class="site-header">
 
         <h2 class="text-alignheader">Brian Camacho</h2>
 
-    </header>
+    </header>-->
 
 
 
@@ -84,4 +88,13 @@
     </section>
 
     <script src="script.js"></script>
+    <script>
+        fetch('components/header.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+
 </body>
